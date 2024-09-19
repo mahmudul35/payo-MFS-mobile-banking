@@ -36,7 +36,9 @@
             <div class="divider"></div>
 
             <!-- add money form -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div
+              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -71,10 +73,50 @@
                 </div>
               </form>
             </div>
+            <!-- add money end -->
+
+            <!-- Cash out start -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"></div>
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    id="cashAmount"
+                    type="email"
+                    placeholder="Amount"
+                    class="input input-bordered"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">PIN</span>
+                  </label>
+                  <input
+                    id="pin-cash"
+                    type="password"
+                    placeholder="PIN"
+                    class="input input-bordered"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="cash-btn" class="btn btn-primary">
+                    Cashout
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- cash out end -->
           </div>
         </div>
       </div>
     </main>
     <script src="./js/home.js"></script>
+    <script src="./js/cashout.js"></script>
   </body>
 </html>
