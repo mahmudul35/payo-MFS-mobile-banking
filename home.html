@@ -20,7 +20,7 @@
           <div class="artboard artboard-demo phone-3">
             <div class="stats shadow">
               <div class="stat">
-                <div id="balance" class="stat-value">89,400</div>
+                <div id="balance" class="stat-value">89400</div>
                 <div class="stat-desc">Total Balance</div>
               </div>
             </div>
@@ -29,7 +29,7 @@
             <div class="divider"></div>
             <!-- add action -->
             <div>
-              <button id="add-btn" class="btn btn-lg">Add Money</button>
+              <button class="btn btn-lg">Add Money</button>
               <button id="withdraw-btn" class="btn btn-lg">Withdraw</button>
             </div>
             <!-- divider -->
@@ -43,9 +43,11 @@
                     <span class="label-text">Amount</span>
                   </label>
                   <input
+                    id="amount"
                     type="email"
                     placeholder="Amount"
                     class="input input-bordered"
+                    autocomplete="off"
                     required
                   />
                 </div>
@@ -54,6 +56,7 @@
                     <span class="label-text">PIN</span>
                   </label>
                   <input
+                    id="pin"
                     type="password"
                     placeholder="PIN"
                     class="input input-bordered"
@@ -62,7 +65,9 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add Money</button>
+                  <button id="add-btn" class="btn btn-primary">
+                    Add Money
+                  </button>
                 </div>
               </form>
             </div>
